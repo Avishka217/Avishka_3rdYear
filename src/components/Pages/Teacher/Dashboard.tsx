@@ -46,36 +46,7 @@ export const Dashboard = () => {
             </div>
           </div>
 
-          <div className="Panel">
-            <div className="PanelSubheader">
-              <h5>Pending Homework</h5>
-            </div>
-            <div className="PanelBody">
-              {/* <PendingHomework /> */}
 
-              {/* <Card
-                header="Mathematics"
-                teacher="Mr. Lasitha Nuwan"
-                time= "04:00pm- 06:00pm"
-                date= "23-05-2022"
-                btnname="Join"
-              /> */}
-
-              <div className="PendingHomework">
-                <Card
-                  header="Mathematics class"
-                  teacher="Mr. Lasitha Nuwan"
-                  date="28-04-2022"
-                  btnname="view"
-                  // icon={AiOutlineHistory}
-                />
-               
-
-            
-              </div>
-              
-            </div>
-          </div>
           
         </Row>
       </Container>

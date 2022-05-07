@@ -55,7 +55,7 @@ export const LeftSidebarTeacher = () => {
 
           <Row>
             <li>
-              <Link to="/myteachers" className="link">
+              <Link to="/mystudents" className="link">
                 <div className="Sidebar_item">
                   <div>
                     <GiTeacher />
@@ -68,7 +68,7 @@ export const LeftSidebarTeacher = () => {
 
           <Row>
             <li>
-              <Link to="/myteachers" className="link">
+              <Link to="/messages" className="link">
                 <div className="Sidebar_item">
                   <div>
                     <BsFillChatLeftDotsFill />

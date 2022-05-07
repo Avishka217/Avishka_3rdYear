@@ -1,27 +1,50 @@
 import * as React from "react";
-import Card from "../../Card/Card";
-import CardHeader from "../../Card/CardHeader";
-import CardDetails from "../../Card/CardDetails";
-import { Row, Col, Container, Button } from "react-bootstrap";
+
+import { Row, Col, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import PanelContainer from "../../Layout/PanelContainer";
+import { Button } from "../../Button/Button";
+
 
 export const CreateCourse = () => {
   return (
-    <div className="MyCourses">
+    <div className="CreateCourseContainer">
       <Container>
-        <Row>
-          <PanelContainer />
-          <div className="PanelHeader">
-            <h2>My Courses</h2>
-          </div>
-
-          <div className="Panel">
-            <div className="PanelBody">
-             <h3>Add a New Course </h3>
+        <div className="PanelHeader">
+          <h2>Create New Course</h2>
+        </div>
+        <div className="PanelContainer">
+          <Row>
+            <div className="CourseImg">
+              <img src={require("../../../Assets/Images/testimg2.jpeg")} />
             </div>
+          </Row>
+          <div className="CourseDetailsContainer">
+            <Row>
+              <div className="CourseDetails">
+                <Col xl={6}>
+                  <div className="CourseLabel">Course Name</div>
+                  <div className="CourseValue">Science</div>
+                </Col>
+                <Col xl={6}>
+                  <div className="CourseLabel">Grade</div>
+                  <div className="CourseValue">10</div>
+                </Col>
+              </div>
+            </Row>
+            <Row>
+              <div className="CourseDetails">
+                <Col xl={6}>
+                  <div className="CourseLabel">Monthly Fee</div>
+                  <div className="CourseValue">2500</div>
+                </Col>
+                <Col xl={6}>
+                  <div className="CourseLabel">Course Description</div>
+                  <div className="CourseValue">This course lorem ipsum</div>
+                </Col>
+              </div>
+            </Row>
           </div>
-        </Row>
+        </div>
       </Container>
     </div>
   );

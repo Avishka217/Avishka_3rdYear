@@ -22,18 +22,19 @@ export const MyCourses = () => {
             <Link to="/createcourse" className="link">
               <Button variant="primary">Add New Course +</Button>
             </Link>
+
             <div className="PanelBody">
               <Link to="/course" className="link">
-                <Card header="Mathematics">
-                  <div className="CardImg">
+                <Card header="Mathematics" >
+                  {/* <div className="CardImg">
                     <img
                       src={require("../../../Assets/Images/testimg2.jpeg")}
                     />
-                  </div>
-                  <div className="CardContent">
+                  </div> */}
+                  {/* <div className="CardContent">
                     <CardHeader>Mathematics class</CardHeader>
                     <CardDetails>Mr. Lasitha Nuwan</CardDetails>
-                  </div>
+                  </div> */}
                 </Card>
               </Link>
 

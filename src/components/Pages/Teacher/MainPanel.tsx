@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import CreateCourse from './CreateCourse';
 import Dashboard from "./Dashboard";
+import Earnings from './Earnings';
 import MyCourses from "./MyCourses";
 import MyStudents from "./MyStudents";
 import Settings from "./Settings";
@@ -39,6 +40,10 @@ const routes = [
   {
     path: "/createcourse",
     main: () => <CreateCourse />,
+  },
+  {
+    path: "/earnings",
+    main: () => <Earnings />,
   },
 ];
 
