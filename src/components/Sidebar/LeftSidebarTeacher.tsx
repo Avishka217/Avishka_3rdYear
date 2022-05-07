@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BsFillGridFill, BsFillBookFill } from "react-icons/bs";
+import { BsFillGridFill, BsFillBookFill, BsWalletFill, BsFillChatLeftDotsFill } from "react-icons/bs";
 import { GiTeacher } from "react-icons/gi";
 import { IoMdCog } from "react-icons/io";
 import "../../Assets/Styles/main.scss";
@@ -44,6 +44,17 @@ export const LeftSidebarTeacher = () => {
 
           <Row>
             <li>
+              <Link to="/earnings" className="link">
+                <div className="Sidebar_item">
+                  <BsWalletFill />
+                  <div className="Sidebar_item_name">Earnings</div>
+                </div>
+              </Link>
+            </li>
+          </Row>
+
+          <Row>
+            <li>
               <Link to="/myteachers" className="link">
                 <div className="Sidebar_item">
                   <div>
@@ -60,7 +71,7 @@ export const LeftSidebarTeacher = () => {
               <Link to="/myteachers" className="link">
                 <div className="Sidebar_item">
                   <div>
-                    <GiTeacher />
+                    <BsFillChatLeftDotsFill />
                   </div>
                   <div className="Sidebar_item_name">Messages</div>
                 </div>

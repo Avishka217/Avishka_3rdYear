@@ -6,6 +6,7 @@ import {
   Link,
   useParams
 } from "react-router-dom";
+import CreateCourse from './CreateCourse';
 import Dashboard from "./Dashboard";
 import MyCourses from "./MyCourses";
 import MyStudents from "./MyStudents";
@@ -35,7 +36,10 @@ const routes = [
     path: "/userprofile",
     main: () => <TeacherProfile />,
   },
-
+  {
+    path: "/createcourse",
+    main: () => <CreateCourse />,
+  },
 ];
 
 export default function MainPanel() {

@@ -3,7 +3,7 @@ import '../src/Assets/Styles/main.scss';
 import LeftSidebar from './components/Sidebar/LeftSidebar';
 import LeftSidebarTeacher  from "./components/Sidebar/LeftSidebarTeacher";
 import RightSidebar from './components/Sidebar/RightSidebar';
-import MainPanel from './components/Pages/Student/MainPanel';
+import MainPanel from './components/Pages/Teacher/MainPanel';
 import { Container, Row, Col } from 'react-bootstrap';
 import {BrowserRouter as Router} from "react-router-dom";
 import TopNavbar from './components/Navbars/TopNavbar';
