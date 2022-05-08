@@ -42,29 +42,8 @@ export const LeftSidebarTeacher = () => {
             </li>
           </Row>
 
-          <Row>
-            <li>
-              <Link to="/earnings" className="link">
-                <div className="Sidebar_item">
-                  <BsWalletFill />
-                  <div className="Sidebar_item_name">Earnings</div>
-                </div>
-              </Link>
-            </li>
-          </Row>
-
-          <Row>
-            <li>
-              <Link to="/mystudents" className="link">
-                <div className="Sidebar_item">
-                  <div>
-                    <GiTeacher />
-                  </div>
-                  <div className="Sidebar_item_name">Students</div>
-                </div>
-              </Link>
-            </li>
-          </Row>
+     
+   
 
           <Row>
             <li>

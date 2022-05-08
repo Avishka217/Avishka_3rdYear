@@ -6,11 +6,11 @@ import {
   Link,
   useParams
 } from "react-router-dom";
+import CourseDetails from './CourseDetails';
 import CreateCourse from './CreateCourse';
 import Dashboard from "./Dashboard";
-import Earnings from './Earnings';
 import MyCourses from "./MyCourses";
-import MyStudents from "./MyStudents";
+
 import Settings from "./Settings";
 import TeacherProfile from "./TeacherProfile";
 
@@ -25,10 +25,7 @@ const routes = [
     path: "/mycourses",
     main: () => <MyCourses />,
   },
-  {
-    path: "/mystudents",
-    main: () => <MyStudents />,
-  },
+
   {
     path: "/settings",
     main: () => <Settings />,
@@ -42,8 +39,8 @@ const routes = [
     main: () => <CreateCourse />,
   },
   {
-    path: "/earnings",
-    main: () => <Earnings />,
+    path: "/coursedetails",
+    main: () => <CourseDetails title={'Maths'} desription={'abcd'} subject={'Sinhala'} grade={'Grade 5'} month={'1500'} image={'img src'} index={1} />,
   },
 ];
 

@@ -1,11 +1,9 @@
-import * as React from 'react';
+import * as React from "react";
 import Card from "../../Card/Card";
-import CardHeader from "../../Card/CardHeader";
-import CardDetails from "../../Card/CardDetails";
-import { Row, Col, Container, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Row, Col, Container } from "react-bootstrap";
+import "../../../Assets/Styles/main.scss";
 import PanelContainer from "../../Layout/PanelContainer";
-
+import { Link } from "react-router-dom";
 
 
 export const MyCourses = () => {
@@ -15,55 +13,76 @@ export const MyCourses = () => {
         <Row>
           <PanelContainer />
           <div className="PanelHeader">
-            <h2>My Courses</h2>
+            <h2>MyCourses</h2>
           </div>
-
           <div className="Panel">
-            <Link to="/createcourse" className="link">
-              <Button variant="primary">Add New Course +</Button>
-            </Link>
+            <div className="PanelSubheader">
+              <h5>Active Courses</h5>
+            </div>
+            <div className="PanelBody">
+              <Link to="/CourseDetails" className="link">
+                <Card
+                  header="Mathematics"
+                  time="04:00pm- 06:00pm"
+                  date="23-05-2022"
+                  btnname="Start"
+                />
+              </Link>
+              <Link to="/course" className="link">
+                <Card
+                  header="Mathematics"
+                  time="04:00pm- 06:00pm"
+                  date="24-05-2022"
+                  btnname="Start"
+                  // image={require("../../Assets/Images/testimg2.jpeg")}
+                />
+              </Link>
+              <Link to="/course" className="link">
+                <Card
+                  header="Mathematics"
+                  time="04:00pm- 06:00pm"
+                  date="25-05-2022"
+                  btnname="Start"
+                />
+              </Link>
+            </div>
+          </div>
+        </Row>
 
+        <Row>
+          <PanelContainer />
+          <div className="PanelHeader">
+           
+          </div>
+          <div className="Panel">
+            <div className="PanelSubheader">
+             
+            </div>
             <div className="PanelBody">
               <Link to="/course" className="link">
-                <Card header="Mathematics" >
-                  {/* <div className="CardImg">
-                    <img
-                      src={require("../../../Assets/Images/testimg2.jpeg")}
-                    />
-                  </div> */}
-                  {/* <div className="CardContent">
-                    <CardHeader>Mathematics class</CardHeader>
-                    <CardDetails>Mr. Lasitha Nuwan</CardDetails>
-                  </div> */}
-                </Card>
+                <Card
+                  header="Mathematics"
+                  time="04:00pm- 06:00pm"
+                  date="23-05-2022"
+                  btnname="Start"
+                />
               </Link>
-
               <Link to="/course" className="link">
-                <Card header="Science">
-                  <div className="CardImg">
-                    <img
-                      src={require("../../../Assets/Images/testimg2.jpeg")}
-                    />
-                  </div>
-                  <div className="CardContent">
-                    <CardHeader>Mathematics class</CardHeader>
-                    <CardDetails>Mr. Lasitha Nuwan</CardDetails>
-                  </div>
-                </Card>
+                <Card
+                  header="Mathematics"
+                  time="04:00pm- 06:00pm"
+                  date="24-05-2022"
+                  btnname="Start"
+                  // image={require("../../Assets/Images/testimg2.jpeg")}
+                />
               </Link>
-
               <Link to="/course" className="link">
-                <Card header="English">
-                  <div className="CardImg">
-                    <img
-                      src={require("../../../Assets/Images/testimg2.jpeg")}
-                    />
-                  </div>
-                  <div className="CardContent">
-                    <CardHeader>Mathematics class</CardHeader>
-                    <CardDetails>Mr. Lasitha Nuwan</CardDetails>
-                  </div>
-                </Card>
+                <Card
+                  header="Mathematics"
+                  time="04:00pm- 06:00pm"
+                  date="25-05-2022"
+                  btnname="Start"
+                />
               </Link>
             </div>
           </div>
