@@ -6,6 +6,7 @@ import CourseTab1 from "./CourseTab1";
 import CourseTab2 from "./CourseTab2";
 import CourseTab3 from "./CourseTab3";
 import "../../../Assets/Styles/main.scss";
+import CourseTab4 from "./CourseTab4";
 
 type CourseDetailsProps = {
 title:string;
@@ -45,6 +46,12 @@ const [toggleState, setToggleState] = useState(1);
           >
             Notes and Course Content
           </button>
+          <button
+            className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
+            onClick={() => setToggleState(4)}
+          >
+            Earnings
+          </button>
         </div>
 
         <div className="content-tabs">
@@ -71,6 +78,14 @@ const [toggleState, setToggleState] = useState(1);
             }
           >
             <CourseTab3 />
+          </div>
+
+          <div
+            className={
+              toggleState === 4 ? "content  active-content" : "content"
+            }
+          >
+            <CourseTab4 />
           </div>
         </div>
       </div>
