@@ -6,6 +6,7 @@ import {
   Link,
   useParams
 } from "react-router-dom";
+import Course from './Course';
 import CourseDetails from './CourseDetails';
 import CreateCourse from './CreateCourse';
 import Dashboard from "./Dashboard";
@@ -38,9 +39,12 @@ const routes = [
     path: "/createcourse",
     main: () => <CreateCourse />,
   },
+
   {
-    path: "/coursedetails",
-    main: () => <CourseDetails title={'Maths'} desription={'abcd'} subject={'Sinhala'} grade={'Grade 5'} month={'1500'} image={'img src'} index={1} />,
+    path: "/course",
+    main: () => (
+      <Course />
+    ),
   },
 ];
 

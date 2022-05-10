@@ -13,75 +13,73 @@ export const MyCourses = () => {
         <Row>
           <PanelContainer />
           <div className="PanelHeader">
-            <h2>MyCourses</h2>
+            <h2>My Courses</h2>
           </div>
           <div className="Panel">
-            <div className="PanelSubheader">
-              <h5>Active Courses</h5>
-            </div>
-            <div className="PanelBody">
-              <Link to="/CourseDetails" className="link">
-                <Card
-                  header="Mathematics"
-                  time="04:00pm- 06:00pm"
-                  date="23-05-2022"
-                  btnname="Start"
-                />
-              </Link>
-              <Link to="/course" className="link">
-                <Card
-                  header="Mathematics"
-                  time="04:00pm- 06:00pm"
-                  date="24-05-2022"
-                  btnname="Start"
-                  // image={require("../../Assets/Images/testimg2.jpeg")}
-                />
-              </Link>
-              <Link to="/course" className="link">
-                <Card
-                  header="Mathematics"
-                  time="04:00pm- 06:00pm"
-                  date="25-05-2022"
-                  btnname="Start"
-                />
-              </Link>
-            </div>
-          </div>
-        </Row>
-
-        <Row>
-          <PanelContainer />
-          <div className="PanelHeader">
-           
-          </div>
-          <div className="Panel">
-            <div className="PanelSubheader">
-             
-            </div>
             <div className="PanelBody">
               <Link to="/course" className="link">
                 <Card
                   header="Mathematics"
+                  teacher="Mr. Lasitha Nuwan"
                   time="04:00pm- 06:00pm"
-                  date="23-05-2022"
-                  btnname="Start"
+                  date="Sunday"
+                  image={
+                    <img
+                      src={require("../../../Assets/Images/testimg2.jpeg")}
+                    />
+                  }
                 />
               </Link>
               <Link to="/course" className="link">
                 <Card
                   header="Mathematics"
-                  time="04:00pm- 06:00pm"
-                  date="24-05-2022"
-                  btnname="Start"
-                  // image={require("../../Assets/Images/testimg2.jpeg")}
+                  teacher="Mr. Lasitha Nuwan"
+                  time="04:00pm - 06:00pm"
+                  date="Sunday"
+                  image={
+                    <img
+                      src={require("../../../Assets/Images/testimg2.jpeg")}
+                    />
+                  }
                 />
               </Link>
               <Link to="/course" className="link">
                 <Card
                   header="Mathematics"
+                  teacher="Mr. Lasitha Nuwan"
                   time="04:00pm- 06:00pm"
-                  date="25-05-2022"
-                  btnname="Start"
+                  date="Sunday"
+                  image={
+                    <img
+                      src={require("../../../Assets/Images/testimg2.jpeg")}
+                    />
+                  }
+                />
+              </Link>
+              <Link to="/course" className="link">
+                <Card
+                  header="Mathematics"
+                  teacher="Mr. Lasitha Nuwan"
+                  time="04:00pm- 06:00pm"
+                  date="Sunday"
+                  image={
+                    <img
+                      src={require("../../../Assets/Images/testimg2.jpeg")}
+                    />
+                  }
+                />
+              </Link>
+              <Link to="/course" className="link">
+                <Card
+                  header="Mathematics"
+                  teacher="Mr. Lasitha Nuwan"
+                  time="04:00pm- 06:00pm"
+                  date="Sunday"
+                  image={
+                    <img
+                      src={require("../../../Assets/Images/testimg2.jpeg")}
+                    />
+                  }
                 />
               </Link>
             </div>
