@@ -7,7 +7,6 @@ import {
   useParams
 } from "react-router-dom";
 import Course from './Course';
-import CourseDetails from './CourseDetails';
 import CreateCourse from './CreateCourse';
 import Dashboard from "./Dashboard";
 import MyCourses from "./MyCourses";

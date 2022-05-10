@@ -1,12 +1,12 @@
-import * as React from 'react';
-import { Component } from 'react';
-import {string, func} from 'prop-types';
+import * as React from "react";
+import { Component } from "react";
+import { string, func } from "prop-types";
 
-type TabProps ={
-  activeTab:string;
-  label:string;
-  onClick:any;
-}
+type TabProps = {
+  activeTab: string;
+  label: string;
+  onClick: any;
+};
 
 class Tab extends Component<TabProps> {
   static propTypes = {
@@ -18,28 +18,22 @@ class Tab extends Component<TabProps> {
   onClick = () => {
     const { label, onClick } = this.props;
     onClick(label);
-  }
+  };
 
   render() {
     const {
       onClick,
-      props: {
-        activeTab,
-        label,
-      },
+      props: { activeTab, label },
     } = this;
 
-    let className = 'tab-list-item';
+    let className = "tab-list-item";
 
     if (activeTab === label) {
-      className += ' tab-list-active';
+      className += " tab-list-active";
     }
 
     return (
-      <li
-        className={className}
-        onClick={onClick}
-      >
+      <li className={className} onClick={onClick}>
         {label}
       </li>
     );
