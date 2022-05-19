@@ -49,7 +49,7 @@ export const Course = () => {
                 <Notes topic="Note for week 4" date="04-05-2022" />
                 <Notes topic="Note for week 5" date="04-05-2022" />
               </div>
-             
+
               <div className="Pending Payments">
                 <PendingPayments
                   month="January"
