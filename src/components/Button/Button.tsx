@@ -2,6 +2,7 @@ import * as React from "react";
 
 type Button = {
 name?: string;
+class?:string;
 }
 
 export const Button :React.FC<Button>= (props) => {

@@ -2,14 +2,17 @@ import * as React from "react";
 import Card from "../../Card/Card";
 import CardHeader from "../../Card/CardHeader";
 import CardDetails from "../../Card/CardDetails";
-import { Row, Col, Container, Tab } from "react-bootstrap";
+import { Row, Col, Container, Tab, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Tabs from "../../Tabs/Tabs";
 import Details from "./Details";
 import Notes from "./Notes";
 
+
 import PendingPayments from "./PendingPayments";
 import PanelContainer from "../../Layout/PanelContainer";
+import UploadButton from "../../Button/UploadButton";
+
 
 export const Course = () => {
   return (
@@ -43,6 +46,7 @@ export const Course = () => {
                 <Details label="Duration" value="12 months" symbol=":" />
               </div>
               <div className="Notes">
+              
                 <Notes topic="Note for week 1" date="04-05-2022" />
                 <Notes topic="Note for week 2" date="04-05-2022" />
                 <Notes topic="Note for week 3" date="04-05-2022" />

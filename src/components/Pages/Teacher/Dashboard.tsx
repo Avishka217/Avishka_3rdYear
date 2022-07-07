@@ -1,5 +1,6 @@
 import * as React from "react";
 import Card from "../../Card/Card";
+
 import { Row, Col, Container } from "react-bootstrap";
 import "../../../Assets/Styles/main.scss";
 
@@ -8,6 +9,9 @@ import TopNavbar from "../../Navbars/TopNavbar";
 import LeftSidebar from "../../Sidebar/LeftSidebar";
 import PanelContainer from "../../Layout/PanelContainer";
 import { AiOutlineHistory } from "react-icons/ai";
+import  Paymentpiechart  from "./Paymentpiechart";
+import Monthlyattendancechart from "./Monthlyattendancechart";
+import Enrollmentchart from "./Enrollmentchart";
 
 export const Dashboard = () => {
   return (
@@ -45,9 +49,12 @@ export const Dashboard = () => {
               />
             </div>
           </div>
+        </Row>
 
-
-          
+        <Row>
+          <Paymentpiechart />
+          <Monthlyattendancechart />
+          <Enrollmentchart />
         </Row>
       </Container>
     </div>

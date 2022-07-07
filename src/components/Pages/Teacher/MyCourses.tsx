@@ -4,6 +4,7 @@ import { Row, Col, Container } from "react-bootstrap";
 import "../../../Assets/Styles/main.scss";
 import PanelContainer from "../../Layout/PanelContainer";
 import { Link } from "react-router-dom";
+import { Button } from "../../Button/Button";
 
 
 export const MyCourses = () => {
@@ -14,6 +15,9 @@ export const MyCourses = () => {
           <PanelContainer />
           <div className="PanelHeader">
             <h2>My Courses</h2>
+            <Link to="/addcourse" className="link">
+              <Button name=" + Add a Course" />
+            </Link>
           </div>
           <div className="Panel">
             <div className="PanelBody">

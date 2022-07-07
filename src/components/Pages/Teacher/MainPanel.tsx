@@ -6,6 +6,7 @@ import {
   Link,
   useParams
 } from "react-router-dom";
+import AddCourse from './AddCourse';
 import Course from './Course';
 import CreateCourse from './CreateCourse';
 import Dashboard from "./Dashboard";
@@ -38,12 +39,13 @@ const routes = [
     path: "/createcourse",
     main: () => <CreateCourse />,
   },
-
+  {
+    path: "/addcourse",
+    main: () => <AddCourse />,
+  },
   {
     path: "/course",
-    main: () => (
-      <Course />
-    ),
+    main: () => <Course />,
   },
 ];
 
