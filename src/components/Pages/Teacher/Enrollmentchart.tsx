@@ -89,7 +89,16 @@ export function Enrollmentchart() {
   }, []);
 
   return (
-    <Chart ref={chartRef} options={options} type="line" data={chartData} />
+    <Chart
+      ref={chartRef}
+      options={options}
+      type="line"
+      data={chartData}
+      style={{
+        height: "207px",
+        width: "415px",
+      }}
+    />
   );
 }
 

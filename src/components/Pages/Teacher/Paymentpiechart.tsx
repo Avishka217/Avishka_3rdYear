@@ -41,7 +41,9 @@ export const data = {
 };
 
 export function Paymentpiechart() {
-  return <Pie className="Paymentpiechart" options={options} data={data} />;
+  return <Pie className="Paymentpiechart" options={options} data={data} 
+  style={{width:"300px", height:"300px"}}
+  />;
 }
 
 
