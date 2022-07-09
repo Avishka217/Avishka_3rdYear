@@ -59,6 +59,7 @@ export const Dashboard = () => {
               display: "flex",
               position: "relative",
               top: -60,
+              left: 10,
             }}
           >
             <div
@@ -66,7 +67,7 @@ export const Dashboard = () => {
               style={{
                 position: "relative",
                 top: 100,
-                left: -30,
+                left: 0,
               }}
             >
               <Paymentpiechart />
@@ -74,17 +75,23 @@ export const Dashboard = () => {
             <div
               className="chart"
               style={{
-                height: "600px",
+                height: "500px",
                 marginRight: "40px",
                 position: "relative",
                 top: 100,
+                left: 40,
               }}
             >
               <Monthlyattendancechart />
             </div>
             <div
               className="chart"
-              style={{ height: "600px", position: "relative", top: 100 }}
+              style={{
+                height: "500px",
+                position: "relative",
+                top: 100,
+                left: 40,
+              }}
             >
               <Enrollmentchart />
             </div>

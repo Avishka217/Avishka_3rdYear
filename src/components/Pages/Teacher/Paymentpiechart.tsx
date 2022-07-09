@@ -20,14 +20,14 @@ export const options = {
 };
 
 export const data = {
-  labels: ["Red", "Blue"],
+  labels: ["Paid", "Still not paid"],
   datasets: [
     {
       label: "# of Votes",
       data: [12, 19],
       backgroundColor: [
-        "rgba(255, 99, 132, 0.2)",
-        "rgba(54, 162, 235, 0.2)",
+        "rgba(134, 30, 219, 0.8)",
+        "rgba(255, 255, 0, 1)",
       
       ],
       borderColor: [

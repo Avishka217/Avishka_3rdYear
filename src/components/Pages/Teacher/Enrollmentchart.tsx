@@ -81,7 +81,7 @@ export function Enrollmentchart() {
       ...data,
       datasets: data.datasets.map((dataset) => ({
         ...dataset,
-     
+        borderColor: "rgba(134, 30, 219, 0.8)",
       })),
     };
 
