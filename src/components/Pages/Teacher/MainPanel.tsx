@@ -6,6 +6,7 @@ import {
   Link,
   useParams
 } from "react-router-dom";
+import Notifications from '../../Notifications/Notifications';
 import AddCourse from './AddCourse';
 import Course from './Course';
 import CreateCourse from './CreateCourse';
@@ -46,6 +47,10 @@ const routes = [
   {
     path: "/course",
     main: () => <Course />,
+  },
+  {
+    path: "/notifications",
+    main: () => <Notifications />,
   },
 ];
 

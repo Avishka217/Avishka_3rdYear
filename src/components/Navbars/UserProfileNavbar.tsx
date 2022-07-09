@@ -1,4 +1,9 @@
 import * as React from "react";
+import { Dropdown, NavLink } from "react-bootstrap";
+import DropdownItem from "react-bootstrap/esm/DropdownItem";
+import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
+import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
+import NavDropdown from "react-bootstrap/esm/NavDropdown";
 import { BsFillBellFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
@@ -19,14 +24,14 @@ export const UserProfileNavbar = (props:UserProfileNavbar) => {
           <div className="Name">{props.name}</div>
         </Link>
       </div>
-      <Link to="#">
+      <Link to="notifications">
         <div className="NotificationBell">
           <BsFillBellFill className="Bell-icon" />
         </div>
       </Link>
       <Link to="/userprofile" className="link">
         <div className="SignoutBtn">
-          <Button name="Signout"/>
+          <Button name="Signout" />
         </div>
       </Link>
     </div>
