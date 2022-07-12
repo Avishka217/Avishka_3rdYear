@@ -8,10 +8,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export const Notifications = () => {
   return (
     <div className="Notifications">
-      <Container>Notifications</Container>
+      <Container>
+     
+        <div className="PanelHeader">
+          <h2>Notifications</h2>
+        </div>
+      </Container>
       <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
-          <Accordion.Header> Your payment for Course "Mathematics by D.H.Silva is successful !"</Accordion.Header>
+          <Accordion.Header>
+            {" "}
+            Your payment for Course "Mathematics by D.H.Silva is successful !"
+          </Accordion.Header>
           <Accordion.Body>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -23,7 +31,10 @@ export const Notifications = () => {
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1">
-          <Accordion.Header> Please Complete your profile information .</Accordion.Header>
+          <Accordion.Header>
+            {" "}
+            Please Complete your profile information .
+          </Accordion.Header>
           <Accordion.Body>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

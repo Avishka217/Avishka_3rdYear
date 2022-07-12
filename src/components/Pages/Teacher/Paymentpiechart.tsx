@@ -31,8 +31,8 @@ export const data = {
       
       ],
       borderColor: [
-        "rgba(255, 99, 132, 1)",
-        "rgba(54, 162, 235, 1)",
+         "rgba(134, 30, 219, 0.8)",
+        "rgba(255, 255, 0, 1)",
        
       ],
       borderWidth: 1,
