@@ -45,6 +45,18 @@ export const options = {
       text: "Monthly Student Enrollment for courses",
     },
   },
+  scales: {
+    x: {
+      grid: {
+        display: false,
+      },
+    },
+    y: {
+      grid: {
+        display: false,
+      },
+    },
+  },
 };
 
 export const data = {

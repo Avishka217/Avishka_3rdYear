@@ -12,6 +12,7 @@ import { AiOutlineHistory } from "react-icons/ai";
 import  Paymentpiechart  from "./Paymentpiechart";
 import Monthlyattendancechart from "./Monthlyattendancechart";
 import Enrollmentchart from "./Enrollmentchart";
+import Averagetimechart from "./Averagetimechart";
 
 export const Dashboard = () => {
   return (
@@ -79,8 +80,8 @@ export const Dashboard = () => {
                 marginRight: "40px",
                 position: "relative",
                 top: 100,
-                marginLeft:"155px",
-                right:-150,
+                marginLeft: "155px",
+                right: -150,
               }}
             >
               <Monthlyattendancechart />
@@ -102,7 +103,7 @@ export const Dashboard = () => {
                 height: "500px",
                 position: "relative",
                 top: 100,
-                left: 40,
+                left: 0,
               }}
             >
               <Enrollmentchart />
@@ -116,7 +117,7 @@ export const Dashboard = () => {
                 left: 40,
               }}
             >
-              <Enrollmentchart />
+              <Averagetimechart />
             </div>
           </div>
         </Row>

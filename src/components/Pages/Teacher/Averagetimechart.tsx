@@ -3,7 +3,6 @@ import * as React from "react";
 import { Pie } from "react-chartjs-2";
 import "../../../Assets/Styles/main.scss";
 
-
 import { faker } from "@faker-js/faker";
 
 import {
@@ -16,7 +15,6 @@ import {
   Legend,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
-
 
 ChartJS.register(
   CategoryScale,
@@ -35,7 +33,7 @@ export const options = {
     },
     title: {
       display: true,
-      text: "Number of students attend courses Monthly",
+      text: "Monthly Student Average Attendance time for Courses",
     },
   },
   scales: {
@@ -60,28 +58,27 @@ export const data = {
     {
       label: "Course 1",
       data: labels.map(() => faker.datatype.number({ min: 0, max: 10 })),
-      backgroundColor: "rgba(250, 182, 0, 1)",
+      backgroundColor: "rgba(139, 137, 243, 0.8)",
     },
     {
       label: "Course 2",
       data: labels.map(() => faker.datatype.number({ min: 0, max: 10 })),
-      backgroundColor: "rgba(0, 138, 168, 1)",
+      backgroundColor: "rgba(255, 49, 114, 0.8)",
     },
   ],
-
 };
 
-export function Monthlyattendancechart() {
+export function Averagetimechart() {
   return (
     <Bar
       options={options}
       data={data}
       style={{
         height: "350px",
-        width: "565px"}}
+        width: "565px",
+      }}
     />
   );
 }
 
-
-export default Monthlyattendancechart;
+export default Averagetimechart;
