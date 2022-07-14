@@ -48,12 +48,12 @@ export const data = {
     {
       label: "Course 1",
       data: labels.map(() => faker.datatype.number({ min: 0, max: 10 })),
-      backgroundColor: "rgba(134, 30, 219, 0.8)",
+      backgroundColor: "rgba(250, 182, 0, 1)",
     },
     {
       label: "Course 2",
       data: labels.map(() => faker.datatype.number({ min: 0, max: 10 })),
-      backgroundColor: "rgba(255, 255, 0, 1)",
+      backgroundColor: "rgba(0, 138, 168, 1)",
     },
   ],
 };
@@ -64,8 +64,8 @@ export function Monthlyattendancechart() {
       options={options}
       data={data}
       style={{
-        height: "207px",
-        width: "415px"}}
+        height: "350px",
+        width: "565px"}}
     />
   );
 }

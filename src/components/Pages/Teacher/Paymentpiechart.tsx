@@ -26,13 +26,13 @@ export const data = {
       label: "# of Votes",
       data: [12, 19],
       backgroundColor: [
-        "rgba(134, 30, 219, 0.8)",
-        "rgba(255, 255, 0, 1)",
+        "rgba(32, 0, 182, 0.8)",
+        "rgba(255, 227, 5, 1)",
       
       ],
       borderColor: [
-         "rgba(134, 30, 219, 0.8)",
-        "rgba(255, 255, 0, 1)",
+         "rgba(32, 0, 182, 0.8)",
+        "rgba(255, 227, 5, 1)",
        
       ],
       borderWidth: 1,

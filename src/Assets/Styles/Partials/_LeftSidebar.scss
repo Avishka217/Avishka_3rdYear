@@ -1,7 +1,9 @@
 .LeftSidebar {
   padding: 3rem 0;
-  height: 90vh;
-  background-color: $sidebar-bg;
+  height: 100vh;
+  background-color: $sidebar-bg;  
+  position: fixed;
+  width: 300px;
   z-index: 1;
   transition: all 0.5s;
   border-radius: 0 20px 20px 0;

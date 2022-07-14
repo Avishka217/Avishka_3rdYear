@@ -54,10 +54,14 @@ export const data = {
     {
       label: "Dataset 1",
       data: labels.map(() => faker.datatype.number({ min: 0, max: 10 })),
+      backgroundColor: "rgba(255, 139, 143, 0.89)",
+      borderColor: "rgba(255, 139, 143, 0.89)",
     },
     {
       label: "Dataset 2",
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 10})),
+      data: labels.map(() => faker.datatype.number({ min: 0, max: 10 })),
+      backgroundColor: "rgba(91, 6, 143, 0.89)",
+      borderColor: "rgba(91, 6, 143, 0.89)",
     },
   ],
 };
@@ -81,9 +85,13 @@ export function Enrollmentchart() {
       ...data,
       datasets: data.datasets.map((dataset) => ({
         ...dataset,
-        borderColor: "rgba(134, 30, 219, 0.8)",
+        
+        
       })),
     };
+
+
+
 
     setChartData(chartData);
   }, []);
@@ -95,8 +103,8 @@ export function Enrollmentchart() {
       type="line"
       data={chartData}
       style={{
-        height: "207px",
-        width: "415px",
+        height: "350px",
+        width: "565px",
       }}
     />
   );
