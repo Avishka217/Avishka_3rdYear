@@ -9,7 +9,7 @@ import { Row, Col, Container } from "react-bootstrap";
 export const PendingHomework = () => {
   return (
     <div className="PendingHomework">
-      <Card>
+      {/* <Card>
         <Row>
           <Col xl={1}>
             <div className="CardImg">
@@ -36,7 +36,7 @@ export const PendingHomework = () => {
             <AiOutlineHistory className="PendingClock" />
           </Col>
         </Row>
-      </Card>
+      </Card> */}
     </div>
   );
 };

@@ -1,13 +1,16 @@
 import * as React from "react";
-import { Button, Container, Form, Row } from "react-bootstrap";
-import { BsBoxArrowUp } from "react-icons/bs";
+
+import { Row, Col, Container, Accordion, Button, Form } from "react-bootstrap";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 import UploadButton from "../../Button/UploadButton";
 
-const AddCourse = () => {
+export const Uploadnotes = () => {
   return (
     <Row>
       <div className="PanelHeader">
-        <h2>Add a Course</h2>
+        <h2>Notes</h2>
       </div>
       <Container>
         <Form>
@@ -37,6 +40,6 @@ const AddCourse = () => {
         </Form>
       </Container>
     </Row>
-  );};
-
-export default AddCourse;
+  );
+};
+export default Uploadnotes;

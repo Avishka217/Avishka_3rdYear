@@ -59,7 +59,7 @@ export const TeacherProfile = () => {
             </Row>
           </div>
           <div className="ProfileButton">
-            <Button>Save Changes</Button>
+           
           </div>
         </div>
       </Container>

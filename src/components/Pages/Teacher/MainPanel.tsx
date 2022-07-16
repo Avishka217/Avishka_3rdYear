@@ -11,10 +11,15 @@ import AddCourse from './AddCourse';
 import Course from './Course';
 import CreateCourse from './CreateCourse';
 import Dashboard from "./Dashboard";
+import Editdetails from './Editdetails';
+import Institutes from './Institutes';
 import MyCourses from "./MyCourses";
 
 import Settings from "./Settings";
+import { Students } from './Students';
 import TeacherProfile from "./TeacherProfile";
+import Uploadhomework from './Uploadhomework';
+import Uploadnotes from './Uploadnotes';
 
 
 const routes = [
@@ -52,6 +57,23 @@ const routes = [
     path: "/notifications",
     main: () => <Notifications />,
   },
+  {
+    path: "/editdetails",
+    main: () => <Editdetails />,
+  },
+  {
+    path: "/uploadnotes",
+    main: () => <Uploadnotes />,
+  },
+  {
+    path: "/uploadhomework",
+    main: () => <Uploadhomework />,
+  },
+  {
+    path: "/institutes",
+    main: () => <Institutes />,
+  },
+
 ];
 
 export default function MainPanel() {

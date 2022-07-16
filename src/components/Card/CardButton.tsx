@@ -8,6 +8,7 @@ export const CardButton :React.FC<CardButton>= (props) => {
   return (
     <div className='CardButton'>
          {props.btnname}
+         
     </div>
   )
 }

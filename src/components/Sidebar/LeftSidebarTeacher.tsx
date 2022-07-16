@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Container, Row } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BsFillGridFill, BsFillBookFill, BsWalletFill, BsFillChatLeftDotsFill } from "react-icons/bs";
+import { BsFillGridFill, BsFillBookFill, BsWalletFill, BsFillChatLeftDotsFill, BsBuilding } from "react-icons/bs";
 import { GiTeacher } from "react-icons/gi";
 import { IoMdCog } from "react-icons/io";
 import "../../Assets/Styles/main.scss";
@@ -41,9 +41,19 @@ export const LeftSidebarTeacher = () => {
               </Link>
             </li>
           </Row>
-
-     
-   
+          <Row>
+            <li>
+              <Link to="/institutes" className="link">
+                <div className="Sidebar_item">
+                  <div>
+                    
+                    <BsBuilding />
+                  </div>
+                  <div className="Sidebar_item_name">Institutes</div>
+                </div>
+              </Link>
+            </li>
+          </Row>
 
           <Row>
             <li>
@@ -53,20 +63,6 @@ export const LeftSidebarTeacher = () => {
                     <BsFillChatLeftDotsFill />
                   </div>
                   <div className="Sidebar_item_name">Messages</div>
-                </div>
-              </Link>
-            </li>
-          </Row>
-
-          <Row>
-            <li>
-              <Link to="/settings" className="link">
-                <div className="Sidebar_item">
-                  <div>
-                    {/* <IoMdCog.Provider value={{ style: { verticalAlign: 'middle' } }} /> */}
-                    <IoMdCog />
-                  </div>
-                  <div className="Sidebar_item_name">Settings</div>
                 </div>
               </Link>
             </li>

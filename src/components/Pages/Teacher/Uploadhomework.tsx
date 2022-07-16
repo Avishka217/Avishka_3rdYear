@@ -1,13 +1,17 @@
 import * as React from "react";
-import { Button, Container, Form, Row } from "react-bootstrap";
-import { BsBoxArrowUp } from "react-icons/bs";
+
+import { Row, Col, Container, Accordion, Button, Form } from "react-bootstrap";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Link } from "react-router-dom";
 import UploadButton from "../../Button/UploadButton";
 
-const AddCourse = () => {
+export const Uploadhomework = () => {
   return (
+    //
     <Row>
       <div className="PanelHeader">
-        <h2>Add a Course</h2>
+        <h2>Homework</h2>
       </div>
       <Container>
         <Form>
@@ -25,7 +29,7 @@ const AddCourse = () => {
           </Form.Group>
           <Form.Group controlId="form.Name">
             <Form.Label className="form-label" for="customFile">
-              Notes File
+              Homework File
             </Form.Label>
             <Form.Control
               type="file"
@@ -34,9 +38,11 @@ const AddCourse = () => {
             />
           </Form.Group>
           <UploadButton />
+         
+   
         </Form>
       </Container>
     </Row>
-  );};
-
-export default AddCourse;
+  );
+};
+export default Uploadhomework;

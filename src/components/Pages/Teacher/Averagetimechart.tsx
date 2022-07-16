@@ -57,12 +57,12 @@ export const data = {
   datasets: [
     {
       label: "Course 1",
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 10 })),
+      data: labels.map(() => faker.datatype.number({ min: 0, max: 3 })),
       backgroundColor: "rgba(139, 137, 243, 0.8)",
     },
     {
       label: "Course 2",
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 10 })),
+      data: labels.map(() => faker.datatype.number({ min: 0, max: 3  })),
       backgroundColor: "rgba(255, 49, 114, 0.8)",
     },
   ],

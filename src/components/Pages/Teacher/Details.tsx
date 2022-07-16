@@ -1,5 +1,6 @@
 import * as React from "react";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row, Button } from "react-bootstrap";
+
 
 type Details = {
   label?: string;
@@ -10,6 +11,7 @@ type Details = {
 export const Details: React.FC<Details> = (props) => {
   return (
     <div className="Details">
+    
       <Container>
         <Row className="DetailItem">
           <Col xl={3}>

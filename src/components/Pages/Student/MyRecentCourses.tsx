@@ -13,7 +13,7 @@ type MyRecentCoursesListProps = {
 export const MyRecentCourses = (props:MyRecentCoursesListProps) => {
   return (
     <div className="MyRecentCourses">
-      <Card>
+      {/* <Card>
         {props.names.map((name,index) => {
           return (
             <div>
@@ -31,7 +31,7 @@ export const MyRecentCourses = (props:MyRecentCoursesListProps) => {
         </div>
         </div>);
         })}
-      </Card>
+      </Card> */}
 
     </div>
   );
