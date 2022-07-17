@@ -57,18 +57,21 @@ export const Dashboard = () => {
             className="chartContainer"
             style={{
               height: "400px",
+      
               display: "flex",
               position: "relative",
-              top: -60,
-              left: 10,
+              // top: -60,
+              // right: 50,
+              alignItems: "center",
+              justifyContent: "space-around",
             }}
           >
             <div
               className="chart"
               style={{
                 position: "relative",
-                top: 100,
-                left: 150,
+                // top: 100,
+                // left: 150,
               }}
             >
               <Paymentpiechart />
@@ -81,7 +84,7 @@ export const Dashboard = () => {
                 position: "relative",
                 top: 100,
                 marginLeft: "155px",
-                right: -150,
+                // right: -150,
               }}
             >
               <Monthlyattendancechart />
@@ -91,10 +94,13 @@ export const Dashboard = () => {
             className="chartContainer"
             style={{
               height: "400px",
+
               display: "flex",
               position: "relative",
               top: -60,
-              left: 10,
+              right: 50,
+              alignItems: "center",
+              justifyContent: "space-around",
             }}
           >
             <div
@@ -114,7 +120,7 @@ export const Dashboard = () => {
                 height: "500px",
                 position: "relative",
                 top: 100,
-                left: 40,
+                // left: 40,
               }}
             >
               <Averagetimechart />

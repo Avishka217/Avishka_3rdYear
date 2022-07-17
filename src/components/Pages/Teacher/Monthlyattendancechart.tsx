@@ -60,12 +60,12 @@ export const data = {
     {
       label: "Course 1",
       data: labels.map(() => faker.datatype.number({ min: 0, max: 10 })),
-      backgroundColor: "rgba(250, 182, 0, 1)",
+      backgroundColor: "#1e90ff",
     },
     {
       label: "Course 2",
       data: labels.map(() => faker.datatype.number({ min: 0, max: 10 })),
-      backgroundColor: "rgba(0, 138, 168, 1)",
+      backgroundColor: "#2f3542",
     },
   ],
 

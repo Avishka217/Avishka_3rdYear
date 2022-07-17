@@ -37,8 +37,25 @@ function createData(
 }
 
 
+function createDataPayment(
+  name: string,
+  contact: string,
+  month: string,
+  amount: string
+) {
+  return { name, contact , month , amount };
+}
 
-
+function createDataSchedule(
+  coursename: string,
+  grade: string,
+  topic: string,
+  date: string,
+  starttime: string,
+  duration: string
+) {
+  return { coursename, grade, topic, date,starttime,duration };
+}
 
 
 const rows= [
@@ -47,7 +64,37 @@ const rows= [
   createData("Arosh Perera", "2022-01-01", "J.B.C Silva", "0112729283"),
 ];
 
-
+const rowsPayment = [
+  createDataPayment("Arosh Perera", "0112729283", "January", "2000"),
+  createDataPayment("Arosh Perera", "0112729283", "January", "2000"),
+  createDataPayment("Arosh Perera", "0112729283", "January", "2000"),
+];
+const rowsSchedule = [
+  createDataSchedule(
+    "Mathematics by Tiran",
+    "10",
+    "Geometry",
+    "2022-07-20",
+    "10:00AM",
+    "2HRS"
+  ),
+  createDataSchedule(
+    "Mathematics by Tiran",
+    "10",
+    "Geometry",
+    "2022-07-20",
+    "10:00AM",
+    "2HRS"
+  ),
+  createDataSchedule(
+    "Mathematics by Tiran",
+    "10",
+    "Geometry",
+    "2022-07-20",
+    "10:00AM",
+    "2HRS"
+  ),
+];
 
 
 export const Course = () => {
@@ -182,11 +229,65 @@ export const Course = () => {
 
               <div className="Schedules">
                 <div className="scheduleContainer">
-                  <Notes topic="Note for week 1" date="04-05-2022" />
-                  <Notes topic="Note for week 2" date="04-05-2022" />
-                  <Notes topic="Note for week 3" date="04-05-2022" />
-                  <Notes topic="Note for week 4" date="04-05-2022" />
-                  <Notes topic="Note for week 5" date="04-05-2022" />
+                  <Button
+                    style={{
+                      marginBottom: "20px",
+                      marginRight: "20px",
+                      float: "right",
+                    }}
+                  >
+                    Add Extra Class
+                  </Button>
+                  <TableContainer component={Paper}>
+                    <Table
+                      size="medium"
+                      aria-label="a dense table"
+                      style={{ textAlign: "left" }}
+                    >
+                      <TableHead style={{ backgroundColor: "#9DD6DF" }}>
+                        <TableRow>
+                          <TableCell>
+                            <b>Course Name</b>
+                          </TableCell>
+                          <TableCell align="left">
+                            <b>Grade</b>
+                          </TableCell>
+
+                          <TableCell align="left">
+                            <b>Topic</b>
+                          </TableCell>
+                          <TableCell align="left">
+                            <b>Date</b>
+                          </TableCell>
+                          <TableCell align="left">
+                            <b>Start time</b>
+                          </TableCell>
+                          <TableCell align="left">
+                            <b>Duration</b>
+                          </TableCell>
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        {rowsSchedule.map((row) => (
+                          <TableRow
+                            key={row.coursename}
+                            sx={{
+                              "&:last-child td, &:last-child th": { border: 0 },
+                            }}
+                          >
+                            <TableCell component="th" scope="row">
+                              {row.coursename}
+                            </TableCell>
+                            <TableCell align="left">{row.grade}</TableCell>
+                            <TableCell align="left">{row.topic}</TableCell>
+                            <TableCell align="left">{row.date}</TableCell>
+                            <TableCell align="left">{row.starttime}</TableCell>
+                            <TableCell align="left">{row.duration}</TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </TableContainer>
                 </div>
               </div>
               <div className="Pending Payments">
@@ -203,19 +304,19 @@ export const Course = () => {
                             <b>Student Name</b>
                           </TableCell>
                           <TableCell align="left">
-                            <b>Joined Date</b>
+                            <b>Contact</b>
                           </TableCell>
 
                           <TableCell align="left">
-                            <b>Parent Name</b>
+                            <b>Month</b>
                           </TableCell>
                           <TableCell align="left">
-                            <b>Contact Number</b>
+                            <b>Amount</b>
                           </TableCell>
                         </TableRow>
                       </TableHead>
                       <TableBody>
-                        {rows.map((row) => (
+                        {rowsPayment.map((row) => (
                           <TableRow
                             key={row.name}
                             sx={{
@@ -225,9 +326,9 @@ export const Course = () => {
                             <TableCell component="th" scope="row">
                               {row.name}
                             </TableCell>
-                            <TableCell align="left">{row.joineddate}</TableCell>
-                            <TableCell align="left">{row.parentname}</TableCell>
                             <TableCell align="left">{row.contact}</TableCell>
+                            <TableCell align="left">{row.month}</TableCell>
+                            <TableCell align="left">{row.amount}</TableCell>
                           </TableRow>
                         ))}
                       </TableBody>

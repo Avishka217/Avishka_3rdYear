@@ -25,16 +25,8 @@ export const data = {
     {
       label: "# of Votes",
       data: [12, 19],
-      backgroundColor: [
-        "rgba(32, 0, 182, 0.8)",
-        "rgba(255, 227, 5, 1)",
-      
-      ],
-      borderColor: [
-         "rgba(32, 0, 182, 0.8)",
-        "rgba(255, 227, 5, 1)",
-       
-      ],
+      backgroundColor: ["#2ed573", "#eb4d4b"],
+      borderColor: ["#2ed573", "#eb4d4b"],
       borderWidth: 1,
     },
   ],
