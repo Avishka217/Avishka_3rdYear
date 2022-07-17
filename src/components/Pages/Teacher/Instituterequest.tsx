@@ -1,33 +1,38 @@
 import * as React from "react";
-import Card from "../../Card/Card";
-import CardHeader from "../../Card/CardHeader";
-import CardDetails from "../../Card/CardDetails";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { FiDownload } from "react-icons/fi";
+
+import { RequestCard } from "../../RequestCard/RequestCard";
+import { RequestCardHeader } from "../../RequestCard/RequestCardHeader";
+import { RequestCardDetails } from "../../RequestCard/RequestCardDetails";
+import { AiFillPropertySafety } from "react-icons/ai";
+
+
+
+
+  
 
 type Instituterequest = {
   name?: string;
-  btnname?:string;
-  btnname1?:string;
- 
+
+
 };
 export const Instituterequest: React.FC<Instituterequest> = (props) => {
   return (
     <div className="Instituterequest">
       <Container>
         <Row>
-          <Card
+          <RequestCard
             header={props.name}
-            btnname={
-              <button type="button" className="btn btn-success">
+            acceptbtnname={
+              <Button type="button" className="btn-success">
                 Accept
-              </button>
-              
+              </Button>
             }
-            btnname1={
-              <button type="button" className="btn btn-danger">
-                Reject
-              </button>
+            rejectbtnname={
+              <Button type="button" className="btn-danger"> 
+                Decline
+              </Button>
             }
           />
         </Row>

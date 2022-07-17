@@ -1,10 +1,10 @@
 import * as React from "react";
 import Card from "../../Card/Card";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container, Button } from "react-bootstrap";
 import "../../../Assets/Styles/main.scss";
 import PanelContainer from "../../Layout/PanelContainer";
 import { Link } from "react-router-dom";
-import { Button } from "../../Button/Button";
+
 
 
 export const MyCourses = () => {
@@ -16,7 +16,7 @@ export const MyCourses = () => {
           <div className="PanelHeader">
             <h2>My Courses</h2>
             <Link to="/addcourse" className="link">
-              <Button name=" + Add a Course" />
+             <Button className="btn-alert" style ={{float:"right" , marginBottom:"40px", marginRight:"40px"}} >Add a Course </Button>
             </Link>
           </div>
           <div className="Panel">

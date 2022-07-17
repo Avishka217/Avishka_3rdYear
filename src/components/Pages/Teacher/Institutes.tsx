@@ -26,20 +26,36 @@ import { Instituterequest } from "./Instituterequest";
 
 function createData(
   name: string,
-  calories: number,
-  fat: number,
-  carbs: number,
-  protein: number
+  joineddate: string,
+  courseofferings: string,
+  classdate: string,
+  starttime: string
 ) {
-  return { name, calories, fat, carbs, protein };
+  return { name, joineddate, courseofferings, classdate, starttime};
 }
 
 const rows = [
-  createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
-  createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
-  createData("Eclair", 262, 16.0, 24, 6.0),
-  createData("Cupcake", 305, 3.7, 67, 4.3),
-  createData("Gingerbread", 356, 16.0, 49, 3.9),
+  createData(
+    "Sigma Institute",
+    "2022-01-01",
+    "Mathematics",
+    "Thursday",
+    "05:00 PM"
+  ),
+  createData(
+    "Sigma Institute",
+    "2022-01-01",
+    "Mathematics",
+    "Thursday",
+    "05:00 PM"
+  ),
+  createData(
+    "Sigma Institute",
+    "2022-01-01",
+    "Mathematics",
+    "Thursday",
+    "05:00 PM"
+  ),
 ];
 
 
@@ -51,7 +67,7 @@ export const Institutes = () => {
         <Row>
           <PanelContainer />
           <div className="PanelHeader">
-            <h2>My Courses</h2>
+            <h2>Institutes</h2>
           </div>
           <div className="Panel">
             <div className="PanelSubHeader"></div>
@@ -64,11 +80,17 @@ export const Institutes = () => {
                   <Table size="medium" aria-label="a dense table">
                     <TableHead>
                       <TableRow>
-                        <TableCell>Dessert (100g serving)</TableCell>
-                        <TableCell align="right">Calories</TableCell>
-                        <TableCell align="right">Fat&nbsp;(g)</TableCell>
-                        <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-                        <TableCell align="right">Protein&nbsp;(g)</TableCell>
+                        <TableCell>
+                          <b>Institute Name</b>
+                        </TableCell>
+                        <TableCell align="right">
+                          <b>Joined Date</b>
+                        </TableCell>
+                        <TableCell align="right">
+                          <b>Course offerings</b>
+                        </TableCell>
+                        <TableCell align="right"><b>Class Date</b></TableCell>
+                        <TableCell align="right"><b>Start Time</b></TableCell>
                       </TableRow>
                     </TableHead>
                     <TableBody>
@@ -82,10 +104,12 @@ export const Institutes = () => {
                           <TableCell component="th" scope="row">
                             {row.name}
                           </TableCell>
-                          <TableCell align="right">{row.calories}</TableCell>
-                          <TableCell align="right">{row.fat}</TableCell>
-                          <TableCell align="right">{row.carbs}</TableCell>
-                          <TableCell align="right">{row.protein}</TableCell>
+                          <TableCell align="right">{row.joineddate}</TableCell>
+                          <TableCell align="right">
+                            {row.courseofferings}
+                          </TableCell>
+                          <TableCell align="right">{row.classdate}</TableCell>
+                          <TableCell align="right">{row.starttime}</TableCell>
                         </TableRow>
                       ))}
                     </TableBody>
@@ -95,7 +119,7 @@ export const Institutes = () => {
               <div className="New Institute Requests">
                 <Link className="link" to="/uploadnotes"></Link>
                 <br />
-                <Instituterequest name="Sigma Institute" />
+                <Instituterequest name="Syzygy Institute" />
                 <Instituterequest name="Sigma Institute" />
                 <Instituterequest name="Sigma Institute" />
                 <Instituterequest name="Sigma Institute" />

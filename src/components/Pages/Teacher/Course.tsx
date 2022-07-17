@@ -28,21 +28,27 @@ import Paper from "@mui/material/Paper";
 
 function createData(
   name: string,
-  calories: number,
-  fat: number,
-  carbs: number,
-  protein: number
+  joineddate: string,
+  parentname: string,
+  contact:string
+
 ) {
-  return { name, calories, fat, carbs, protein };
+  return { name, joineddate, parentname,contact};
 }
 
-const rows = [
-  createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
-  createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
-  createData("Eclair", 262, 16.0, 24, 6.0),
-  createData("Cupcake", 305, 3.7, 67, 4.3),
-  createData("Gingerbread", 356, 16.0, 49, 3.9),
+
+
+
+
+
+const rows= [
+  createData("Arosh Perera", "2022-01-01", "J.B.C Silva", "0112729283"),
+  createData("Arosh Perera", "2022-01-01", "J.B.C Silva", "0112729283"),
+  createData("Arosh Perera", "2022-01-01", "J.B.C Silva", "0112729283"),
 ];
+
+
+
 
 export const Course = () => {
   return (
@@ -130,14 +136,26 @@ export const Course = () => {
               <div className="Students">
                 <div className="studentContainer">
                   <TableContainer component={Paper}>
-                    <Table size="medium" aria-label="a dense table">
-                      <TableHead>
+                    <Table
+                      size="medium"
+                      aria-label="a dense table"
+                      style={{ textAlign: "left" }}
+                    >
+                      <TableHead style={{ backgroundColor: "#9DD6DF" }}>
                         <TableRow>
-                          <TableCell>Dessert (100g serving)</TableCell>
-                          <TableCell align="right">Calories</TableCell>
-                          <TableCell align="right">Fat&nbsp;(g)</TableCell>
-                          <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-                          <TableCell align="right">Protein&nbsp;(g)</TableCell>
+                          <TableCell>
+                            <b>Student Name</b>
+                          </TableCell>
+                          <TableCell align="left">
+                            <b>Joined Date</b>
+                          </TableCell>
+
+                          <TableCell align="left">
+                            <b>Parent Name</b>
+                          </TableCell>
+                          <TableCell align="left">
+                            <b>Contact Number</b>
+                          </TableCell>
                         </TableRow>
                       </TableHead>
                       <TableBody>
@@ -151,10 +169,9 @@ export const Course = () => {
                             <TableCell component="th" scope="row">
                               {row.name}
                             </TableCell>
-                            <TableCell align="right">{row.calories}</TableCell>
-                            <TableCell align="right">{row.fat}</TableCell>
-                            <TableCell align="right">{row.carbs}</TableCell>
-                            <TableCell align="right">{row.protein}</TableCell>
+                            <TableCell align="left">{row.joineddate}</TableCell>
+                            <TableCell align="left">{row.parentname}</TableCell>
+                            <TableCell align="left">{row.contact}</TableCell>
                           </TableRow>
                         ))}
                       </TableBody>
@@ -164,14 +181,58 @@ export const Course = () => {
               </div>
 
               <div className="Schedules">
-          
-
                 <div className="scheduleContainer">
                   <Notes topic="Note for week 1" date="04-05-2022" />
                   <Notes topic="Note for week 2" date="04-05-2022" />
                   <Notes topic="Note for week 3" date="04-05-2022" />
                   <Notes topic="Note for week 4" date="04-05-2022" />
                   <Notes topic="Note for week 5" date="04-05-2022" />
+                </div>
+              </div>
+              <div className="Pending Payments">
+                <div className="paymentsContainer">
+                  <TableContainer component={Paper}>
+                    <Table
+                      size="medium"
+                      aria-label="a dense table"
+                      style={{ textAlign: "left" }}
+                    >
+                      <TableHead style={{ backgroundColor: "#9DD6DF" }}>
+                        <TableRow>
+                          <TableCell>
+                            <b>Student Name</b>
+                          </TableCell>
+                          <TableCell align="left">
+                            <b>Joined Date</b>
+                          </TableCell>
+
+                          <TableCell align="left">
+                            <b>Parent Name</b>
+                          </TableCell>
+                          <TableCell align="left">
+                            <b>Contact Number</b>
+                          </TableCell>
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        {rows.map((row) => (
+                          <TableRow
+                            key={row.name}
+                            sx={{
+                              "&:last-child td, &:last-child th": { border: 0 },
+                            }}
+                          >
+                            <TableCell component="th" scope="row">
+                              {row.name}
+                            </TableCell>
+                            <TableCell align="left">{row.joineddate}</TableCell>
+                            <TableCell align="left">{row.parentname}</TableCell>
+                            <TableCell align="left">{row.contact}</TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </TableContainer>
                 </div>
               </div>
             </Tabs>

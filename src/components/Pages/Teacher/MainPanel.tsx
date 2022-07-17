@@ -17,9 +17,9 @@ import MyCourses from "./MyCourses";
 
 import Settings from "./Settings";
 import { Students } from './Students';
-import TeacherProfile from "./TeacherProfile";
 import Uploadhomework from './Uploadhomework';
 import Uploadnotes from './Uploadnotes';
+import Userprofile from './Userprofile';
 
 
 const routes = [
@@ -39,7 +39,7 @@ const routes = [
   },
   {
     path: "/userprofile",
-    main: () => <TeacherProfile />,
+    main: () => <Userprofile />,
   },
   {
     path: "/createcourse",
